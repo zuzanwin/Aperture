@@ -16,7 +16,7 @@ public class ProductTests
     }
 
 
-    public void GetAllProducts_ShouldReturnProducts()
+    public void GetAllProducts()
     {
         var request = new RestRequest("/products", Method.Get);
         var response = _client.Execute(request);
@@ -28,7 +28,7 @@ public class ProductTests
     }
 
 
-    public void CreateProduct_ShouldAddNewProduct()
+    public void CreateProduct()
     {
         var product = TestDataHelper.CreateTestProduct();
         var request = new RestRequest("/products", Method.Post);
@@ -43,7 +43,7 @@ public class ProductTests
     }
 
 
-    public void UpdateProduct_ShouldModifyExistingProduct()
+    public void UpdateProduct()
     {
         var productId = 1; // Assuming a product with ID 1 exists
         var updatedProduct = new { Title = "Updated Title" };
@@ -58,7 +58,7 @@ public class ProductTests
     }
 
 
-    public void DeleteProduct_ShouldRemoveProduct()
+    public void DeleteProduct()
     {
         var productId = 1; // Assuming a product with ID 1 exists
         var request = new RestRequest($"/products/{productId}", Method.Delete);
@@ -73,7 +73,7 @@ public class ProductTests
     }
 
 
-    public void GetProductCategories_ShouldReturnCategories()
+    public void GetProductCategories()
     {
         var request = new RestRequest("/products/categories", Method.Get);
         var response = _client.Execute(request);
@@ -85,7 +85,7 @@ public class ProductTests
     }
 
 
-    public void GetProductsSorted_ShouldReturnSortedProducts()
+    public void GetProductsSorted()
     {
         var request = new RestRequest("/products?sort=asc", Method.Get);
         var response = _client.Execute(request);
