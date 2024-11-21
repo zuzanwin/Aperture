@@ -1,0 +1,3 @@
+URL;SCREENSHOT_PATH;USERNAME;PASSWORD;FIRST_NAME;LAST_NAME;POSTAL_CODE;TAX_RATE;COMPLETE_HEADER;COMPLETE_TEXT;BACKHOME_BUTTON_LABEL;
+https://www.saucedemo.com/;D:/Aperture/Sauce Demo Screenshots;standard_user;secret_sauce;Emily;Lim;12345;0.08;Thank you for your order!;Your order has been dispatched, and will arrive just as fast as the pony can get there!;Back Home;
+https://www.saucedemo.com/;D:/Aperture/Sauce Demo Screenshots;visual_user;secret_sauce;Emily;Lim;12345;0.08;Thank you for your order!;Your order has been dispatched, and will arrive just as fast as the pony can get there!;Back Home;

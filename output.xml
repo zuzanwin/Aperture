@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-11-20T19:01:15.963721" rpa="false" schemaversion="5">
+<suite id="s1" name="Swab" source="D:\Aperture\swab.robot">
+<test id="s1-t1" name="Test Shopping Cart Functionality" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-20T19:01:16.299762" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-20T19:01:16.299762" elapsed="2.542184"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-20T19:01:18.842981" elapsed="0.062869"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<msg time="2024-11-20T19:01:18.916918" level="FAIL">No keyword with name 'Take Custom Screenshot' found.</msg>
+<arg>Login Page Loaded</arg>
+<status status="FAIL" start="2024-11-20T19:01:18.916090" elapsed="0.000828">No keyword with name 'Take Custom Screenshot' found.</status>
+</kw>
+<kw name="Login To Application">
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.930511" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>After Login</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.944024" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Add Item To Cart">
+<arg>${index}</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.949875" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>After Adding Item Index ${index}</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.955585" elapsed="0.000000"/>
+</kw>
+<var name="${index}"/>
+<status status="NOT RUN" start="2024-11-20T19:01:18.948862" elapsed="0.006723"/>
+</iter>
+<var>${index}</var>
+<value>@{ITEM_INDEXES}</value>
+<status status="NOT RUN" start="2024-11-20T19:01:18.948862" elapsed="0.007552"/>
+</for>
+<kw name="Go To Shopping Cart">
+<status status="NOT RUN" start="2024-11-20T19:01:18.957414" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Shopping Cart Page Loaded</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.965855" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Cart Items Count">
+<arg>@{EXPECTED_COUNT}</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.966869" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Verified Cart Items Count</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.972872" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Cart Contents">
+<status status="NOT RUN" start="2024-11-20T19:01:18.973874" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Verified Cart Contents</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.979557" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Visible Buttons in the Cart Screen">
+<status status="NOT RUN" start="2024-11-20T19:01:18.979557" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Cart Buttons Verified</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.983557" elapsed="0.000000"/>
+</kw>
+<kw name="Click Checkout Button">
+<status status="NOT RUN" start="2024-11-20T19:01:18.984555" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Checkout Page Loaded</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.987120" elapsed="0.001022"/>
+</kw>
+<kw name="Fill Checkout Info">
+<status status="NOT RUN" start="2024-11-20T19:01:18.988142" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Checkout Information Filled</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.990141" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Cart Contents">
+<status status="NOT RUN" start="2024-11-20T19:01:18.991134" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Verified Cart on Checkout Overview</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:18.997655" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Price Totals">
+<status status="NOT RUN" start="2024-11-20T19:01:18.998664" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Verified Price Totals</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:19.003047" elapsed="0.000000"/>
+</kw>
+<kw name="Click Finish Button">
+<status status="NOT RUN" start="2024-11-20T19:01:19.004048" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Order Completion Page Loaded</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:19.009735" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Successful Page">
+<status status="NOT RUN" start="2024-11-20T19:01:19.010614" elapsed="0.000000"/>
+</kw>
+<kw name="Take Custom Screenshot">
+<arg>Verified Successful Checkout Page</arg>
+<status status="NOT RUN" start="2024-11-20T19:01:19.016226" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-20T19:01:19.018256" elapsed="2.426229"/>
+</kw>
+<doc>Tests login, adding items, and verifying cart contents</doc>
+<status status="FAIL" start="2024-11-20T19:01:16.297767" elapsed="5.146718">No keyword with name 'Take Custom Screenshot' found.</status>
+</test>
+<doc>Test suite for Sauce Demo shopping functionality</doc>
+<status status="FAIL" start="2024-11-20T19:01:15.966246" elapsed="5.481771"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Swab">Swab</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-20T19:01:15.954114" level="WARN">Error in file 'D:\Aperture\swab.robot' on line 103: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-20T19:01:15.956745" level="WARN">Error in file 'D:\Aperture\swab.robot' on line 190: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-20T19:01:15.956745" level="WARN">Error in file 'D:\Aperture\swab.robot' on line 196: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-20T19:01:15.957721" level="WARN">Error in file 'D:\Aperture\swab.robot' on line 202: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-20T19:01:15.957721" level="WARN">Error in file 'D:\Aperture\swab.robot' on line 218: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-20T19:01:15.967253" level="ERROR">Error in file 'D:\Aperture\swab.robot' on line 24: Setting variable 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' failed: Invalid variable name 'Your order has been dispatched, and will arrive just as fast as the pony can get there!'.</msg>
+<msg time="2024-11-20T19:01:16.296764" level="ERROR">Error in file 'D:\Aperture\swab.robot' on line 9: Resource file '..\keywords\common_keywords.robot' does not exist.</msg>
+</errors>
+</robot>

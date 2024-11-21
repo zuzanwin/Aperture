@@ -1,0 +1,4 @@
+D:\Aperture\API testing\obj\Debug\net9.0\API testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aperture\API testing\obj\Debug\net9.0\API testing.AssemblyInfoInputs.cache
+D:\Aperture\API testing\obj\Debug\net9.0\API testing.AssemblyInfo.cs
+D:\Aperture\API testing\obj\Debug\net9.0\API testing.csproj.CoreCompileInputs.cache

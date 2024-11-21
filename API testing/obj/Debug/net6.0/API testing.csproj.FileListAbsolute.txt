@@ -1,0 +1,21 @@
+D:\Aperture\API testing\bin\Debug\net6.0\API testing.exe
+D:\Aperture\API testing\bin\Debug\net6.0\API testing.deps.json
+D:\Aperture\API testing\bin\Debug\net6.0\API testing.runtimeconfig.json
+D:\Aperture\API testing\bin\Debug\net6.0\API testing.dll
+D:\Aperture\API testing\bin\Debug\net6.0\API testing.pdb
+D:\Aperture\API testing\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Aperture\API testing\bin\Debug\net6.0\RestSharp.dll
+D:\Aperture\API testing\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Aperture\API testing\bin\Debug\net6.0\System.Text.Json.dll
+D:\Aperture\API testing\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.csproj.AssemblyReference.cache
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.AssemblyInfoInputs.cache
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.AssemblyInfo.cs
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.csproj.CoreCompileInputs.cache
+D:\Aperture\API testing\obj\Debug\net6.0\API test.BCED00B4.Up2Date
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.dll
+D:\Aperture\API testing\obj\Debug\net6.0\refint\API testing.dll
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.pdb
+D:\Aperture\API testing\obj\Debug\net6.0\API testing.genruntimeconfig.cache
+D:\Aperture\API testing\obj\Debug\net6.0\ref\API testing.dll

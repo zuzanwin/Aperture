@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-11-20T00:21:01.836231" rpa="false" schemaversion="5">
+<suite id="s1" name="Aperture" source="D:\Aperture">
+<suite id="s1-s1" name="Swab" source="D:\Aperture\Swab.robot">
+<test id="s1-s1-t1" name="Test Login With Multiple Users" line="31">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-20T00:21:03.331982" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-20T00:21:03.329981" elapsed="7.750935"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Login To Application">
+<arg>${user}</arg>
+<arg>${pass}</arg>
+<status status="NOT RUN" start="2024-11-20T00:21:11.102000" elapsed="0.001015"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Add Item To Cart">
+<arg>${index}</arg>
+<status status="NOT RUN" start="2024-11-20T00:21:11.110030" elapsed="0.007545"/>
+</kw>
+<var name="${index}"/>
+<status status="NOT RUN" start="2024-11-20T00:21:11.104015" elapsed="0.020129"/>
+</iter>
+<var>${index}</var>
+<value>@{ITEM_INDEXES}</value>
+<status status="NOT RUN" start="2024-11-20T00:21:11.103015" elapsed="0.021129"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-11-20T00:21:11.125141" elapsed="0.000000"/>
+</kw>
+<var name="${user}"/>
+<var name="${pass}"/>
+<status status="NOT RUN" start="2024-11-20T00:21:11.102000" elapsed="0.024144"/>
+</iter>
+<msg time="2024-11-20T00:21:11.126144" level="FAIL">FOR loop must have closing END.</msg>
+<var>${user}</var>
+<var>${pass}</var>
+<value>@{USER_CREDENTIALS}</value>
+<status status="FAIL" start="2024-11-20T00:21:11.100462" elapsed="0.026682">FOR loop must have closing END.</status>
+</for>
+<status status="FAIL" start="2024-11-20T00:21:03.324894" elapsed="7.811803">FOR loop must have closing END.</status>
+</test>
+<status status="FAIL" start="2024-11-20T00:21:02.317888" elapsed="8.841711"/>
+</suite>
+<status status="FAIL" start="2024-11-20T00:21:02.200073" elapsed="8.973627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Aperture">Aperture</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Swab">Aperture.Swab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
